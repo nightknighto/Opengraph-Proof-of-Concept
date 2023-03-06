@@ -1,4 +1,5 @@
 import fs from 'fs';
+// @ts-ignore
 import satori from 'satori'
 import { Resvg } from '@resvg/resvg-js';
 
@@ -14,7 +15,7 @@ import { html } from "./satori-html.cjs";
 
 export default async function satoriFunc() {
   const template = await html(`
-    <div style="font-family: Roboto; font-size: 24px; color: #000000;">
+    <div style="font-family: Roboto; font-size: 24px; color: #000000; display: flex">
       <p>Hello World!</p>
     </div>
   `)
