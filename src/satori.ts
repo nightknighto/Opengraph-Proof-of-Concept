@@ -3,14 +3,14 @@ import satori from 'satori'
 import { Resvg } from '@resvg/resvg-js';
 
 // failed
-// import { html } from "satori-html";
+import { html } from "./satori-html.cjs";
 
 // failed 
-const html = async (...args: string[]) => {
-  const { html } = await import('satori-html');
-  // @ts-ignore
-  return html(...args);
-}
+// const html = async (...args: string[]) => {
+//   const { html } = await import('satori-html');
+//   // @ts-ignore
+//   return html(...args);
+// }
 
 export default async function satoriFunc() {
   const template = await html(`
